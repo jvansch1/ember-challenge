@@ -10,6 +10,9 @@ Router.map(function() {
   this.route('labels', function() {
     this.route('new', { path: '/new'});
   });
+  this.route("artists", function() {
+    this.route('new', { path: '/new'});
+  });
 });
 
 export default Router;

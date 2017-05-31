@@ -4,13 +4,15 @@ export default Ember.Controller.extend({
   actions: {
     addLabel: function() {
       let name = this.get('name');
-      // alert(name)
-      let newTask = this.store.createRecord('label', {
+      let newLabel = this.store.createRecord('label', {
         name: name
       })
-      // alert(newTask)
-      newTask.save()
-
+      this.setProperties({
+        name: ''
+      })
+      newLabel.save().then(() => {
+        this.transitionToRoute('labels')
+      })
     }
   }
 })
