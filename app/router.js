@@ -7,8 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route("components/home", { path: '/home'});
-  this.route("components/albums", { path: '/albums'});
+  this.route('labels', function() {
+    this.route('new', { path: '/new'});
+  });
 });
 
 export default Router;
