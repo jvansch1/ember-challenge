@@ -2,5 +2,5 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  label: DS.belongsTo('album')
+  label: DS.belongsTo('label')
 })

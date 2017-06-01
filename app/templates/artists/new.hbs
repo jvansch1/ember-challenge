@@ -1,5 +1,10 @@
 <h1>New Artist</h1>
 <form>
   {{input type='text' placeholder='Add Artist name' value=name}}
+  <select value=label id='label-dropdown'>
+    {{#each model as |label|}}
+      <option value={{label.id}}>{{label.name}}</option>
+    {{/each}}
+  </select>
   <button{{action 'addArtist'}}>Submit</button>
 </form>

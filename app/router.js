@@ -13,6 +13,7 @@ Router.map(function() {
   });
   this.route("artists", function() {
     this.route('new', { path: '/new'});
+    this.route('artist', { path: '/artist/:artist_id'});
   });
   this.route("albums", function() {
     this.route('new', { path: '/new'});
