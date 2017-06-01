@@ -4,7 +4,6 @@ export default Ember.Route.extend({
   model: function() {
     let object = JSON.parse(localStorage['ember-code-challenge'])
     let array = [];
-    console.log(object)
     Object.keys(object.album.records).forEach(key => {
       array.push(object.album.records[key])
     })

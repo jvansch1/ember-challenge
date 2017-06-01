@@ -1,6 +1,13 @@
 <h1>labels index</h1>
-{{#each model as |label|}}
-  <p>{{label.name}}</p>
-  <p>{{label.id}}</p>
-{{/each}}
-{{outlet}}
+<div id='labels-index-container'>
+  <ul id='label-list'>
+    {{#each model as |label|}}
+    <li class='label-index-item'>
+      <p>{{label.name}}</p>
+      {{#link-to 'labels.label' label.id}}Link{{/link-to}}
+      <p>{{label.id}}</p>
+    </li>
+    {{/each}}
+  </ul>
+  {{outlet}}
+</div>

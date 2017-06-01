@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,uBAAuB;EACrB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,MAAM;EACd,eAAe,EAAE,aAAa;;AAEhC,WAAW;EACT,KAAK,EAAE,KAAK;;AAEd,WAAW;EACT,MAAM,EAAE,eAAe;;AAEzB,iBAAiB;EACf,MAAM,EAAE,eAAe;EACvB,OAAO,EAAE,GAAG",
+"sources": ["labels.sass"],
+"names": [],
+"file": "labels.css"
+}
